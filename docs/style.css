@@ -1,0 +1,216 @@
+.header-wrapper {
+  background-image: url(header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+/* services--------------- */
+
+.services-wrapper .icone {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.services-wrapper .icone i {
+  font-size: 64px;
+}
+
+/* ----------portfolio------- */
+
+.contenu-image-textes {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.contenu-image-textes:hover .contenu-textes {
+  visibility: visible;
+}
+
+.contenu-image {
+}
+
+.contenu-image img {
+  width: 350px;
+  height: 250px;
+}
+
+.contenu-textes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  width: 355px;
+  height: 250px;
+  background: rgba(255, 200, 0, 0.9);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+/* ---------about----------------------------------------------- */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.wrapper {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+
+.wrapper:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  width: 2px;
+  margin-left: -1.5px;
+  content: "";
+  background-color: #294159; #e9ecef
+}
+
+.wrapper li {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 50px;
+}
+
+.wrapper li:before,
+.wrapper li:after {
+  display: table;
+  content: " ";
+}
+
+.wrapper li:after {
+    clear: both;
+}
+
+.wrapper li .timeline-image {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  margin-left: 0;
+  text-align: center;
+  color: white;
+  border: 7px solid #e9ecef;
+  border-radius: 100%;
+  background-color: #ffc800;
+}
+
+.image-ronde {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper li .timeline-panel {
+  position: relative;
+  float: right;
+  width: 100%;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+
+.wrapper li .timeline-inverted .timeline-panel {
+  float: right;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+
+.wrapper li .timeline-image h4 {
+  font-size: 10px;
+  line-height: 14px;
+  margin-top: 12px;
+}
+
+.wrapper .timeline-body ul, .wrapper .timeline-body  p {
+    margin-bottom: 0;
+}
+
+.text-muted {
+    --bs-text-opacity: 1;
+    color: #6c757d !important;
+}
+
+p {
+    line-height: 1.75;
+}
+
+.wrapper .timeline-heading h4.subheading, .wrapper .timeline-heading .subheading.h4 {
+    text-transform: none;
+}
+/* medias-queries------------------- */
+
+@media (min-width: 992px) {
+  .wrapper li .timeline-inverted .timeline-panel {
+    padding: 0 20px 20px;
+  }
+
+  .wrapper li .timeline-panel {
+    padding: 0 20px 20px;
+  }
+
+  .wrapper li {
+    min-height: 150px;
+  }
+
+  .wrapper li .timeline-image {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+  }
+}
+
+/* ------------------ */
+@media (min-width: 768px) {
+  .wrapper:before {
+    left: 50%;
+  }
+  .wrapper li .timeline-inverted .timeline-panel {
+    float: right;
+    padding: 0 30px 20px 20px;
+    text-align: left;
+  }
+
+  .wrapper li .timeline-panel {
+    float: left;
+    width: 41%;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+  }
+
+  .wrapper li {
+    min-height: 100px;
+    margin-bottom: 100px;
+  }
+
+  .wrapper li .timeline-image {
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+  }
+}
+/* -------------team------------------------------------------- */
+
+.image-rond img {
+  width: 200px;
+  height: 200px;
+}
+
+.team-wrapper .allicone .icone {
+  width: 40px;
+  height: 40px;
+}
+/* ------------contact------------- */
+.contact-wrapper {
+  background-image: url(gros-plan-du-studio-ingenieur-du-son-equipement.jpg);
+  background-size: cover;
+}
