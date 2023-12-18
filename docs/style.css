@@ -5,6 +5,11 @@
   height: 750px;
 }
 
+:root {
+  scroll-padding-top: 70px;
+  scroll-behavior: smooth;
+}
+
 .a-centrer {
   padding-top: 150px;
 }
